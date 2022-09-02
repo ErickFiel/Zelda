@@ -13,5 +13,4 @@ int main( )
     royalGuardSword.print();
 
     return 0;
-
 }

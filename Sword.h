@@ -7,13 +7,12 @@ public:
     Sword();
     ~Sword();
 
-    void print( ) const;
+    void print() const;
+    void buffStr(double);
 
 private:
-
     double strength;
     int durability;
-
 };
 
 #endif // SWORD_H

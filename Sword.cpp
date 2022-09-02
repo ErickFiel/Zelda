@@ -3,20 +3,25 @@ using std::cout;
 
 #include "Sword.h"
 
-Sword::Sword( )
+Sword::Sword()
 {
-   cout << "Inicializando Sword no constructor.\n";
-   strength = 48;
-   durability = 14;
+    cout << "Inicializando Sword no constructor.\n";
+    strength = 48;
+    durability = 14;
 }
 
-Sword::~Sword( )
-{  
-
+Sword::~Sword()
+{
 }
 
-void Sword::print( ) const
+void Sword::print() const
 {
-    cout << "Strength: "   << strength << '\n';
+    cout << "Strength: " << strength << '\n';
     cout << "Durability: " << durability << '\n';
+}
+
+void Sword::buffStr(double strength)
+{
+    this->strength += strength;
+    return;
 }
